@@ -25,7 +25,7 @@ public class Car {
 	private Collection<FuelReading> fualReadings=new ArrayList<>();
 	
 	@OneToMany
-	Collection<SpeedoMeterReading> Speeddometer=new ArrayList<>();
+	private Collection<SpeedoMeterReading> Speeddometer=new ArrayList<>();
 	
 	public CarType getCartype() {
 		return cartype;

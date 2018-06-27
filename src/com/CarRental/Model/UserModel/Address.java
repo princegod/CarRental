@@ -7,7 +7,24 @@ public class Address {
 	private String Email;
 	private String Mobile;
     private String Street;
-	
+	private String city;
+	private String State;
+	private String country;
+	private String pincode;
+
+
+    
+	public Address(String email, String mobile, String street, String city,
+			String state, String country, String pincode) {
+		super();
+		Email = email;
+		Mobile = mobile;
+		Street = street;
+		this.city = city;
+		State = state;
+		this.country = country;
+		this.pincode = pincode;
+	}
 	public String getEmail() {
 		return Email;
 	}
@@ -50,8 +67,4 @@ public class Address {
 	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
-	private String city;
-	private String State;
-	private String country;
-	private String pincode;
 }

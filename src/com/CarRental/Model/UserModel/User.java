@@ -11,10 +11,21 @@ public class User {
 	private Long Uid;
 	private String Username;
 	private String Password;
+	public User(String username, String password,
+			Collection<Address> listOfAddress, String dob, String gender) {
+		super();
+		Username = username;
+		Password = password;
+		ListOfAddress = listOfAddress;
+		Dob = dob;
+		Gender = gender;
+	}
 	@OneToMany	
 	private Collection<Address> ListOfAddress=new ArrayList<>();
-	private Date Dob;
+	private String Dob;
 	private String Gender;
+	
+	
 	public User() {
 		// TODO Auto-generated constructor stub
 	}
@@ -45,10 +56,10 @@ public class User {
 	public void setPassword(String password) {
 		Password = password;
 	}
-	public Date getDob() {
+	public String getDob() {
 		return Dob;
 	}
-	public void setDob(Date dob) {
+	public void setDob(String dob) {
 		Dob = dob;
 	}
 	public String getGender() {
